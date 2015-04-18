@@ -1,12 +1,10 @@
 # Meteor-Bird
-========================
-## Sobre
 
 Este é um projeto de exemplo utilizado como didática para o livro:  
 Meteor - Aplicações web real-time com JavaScript  
 https://casadocodigo.refersion.com/l/d88.3525
 
-## Instalando
+## Instalando e rodando
 
 * Instale o Node.js (http://nodejs.org)
 * Instale o Meteor (http://meteor.com)
