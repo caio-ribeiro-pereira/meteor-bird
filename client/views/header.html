@@ -1,0 +1,17 @@
+<template name="header">
+ <header class="container">
+  <nav class="navbar navbar-default">
+   <div class="navbar-header">
+    <a href="{{pathFor route='home'}}" 
+      class="navbar-brand">
+     Meteor Bird
+    </a>
+   </div>
+   <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav navbar-right">
+     {{> loginButtons}}
+    </ul>
+   </div>
+  </nav>
+ </header>
+</template>

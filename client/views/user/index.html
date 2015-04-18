@@ -1,0 +1,15 @@
+<template name="user">
+ {{#if user}}
+  <div class="text-center">
+   {{#with user.profile}}
+    <h1>{{name}}</h1>
+    <p>{{about}}</p>
+   {{/with}}
+   {{> friendship}}
+   {{> followButton}}
+   {{> timeline}}
+  </div>
+ {{else}}
+  <h1>Usuário não identificado.</h1>
+ {{/if}}
+</template>
