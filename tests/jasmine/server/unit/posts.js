@@ -3,23 +3,22 @@ describe("Posts", function() {
   var userId = 999;
   var userName = "User";
   var message = "Hello!";
-  var timeNow = new Date(2000,1,1);
   var userIds = [userId, 111];
+  var timeNow = new Date(2000,1,1);
   var userNames = ["UserA", "UserB"];
 
   beforeEach(function () {
-    spyOn(Meteor, "userId").and.returnValue(userId);
     jasmine.clock().install();
+    jasmine.clock().mockDate(timeNow);
+    spyOn(Meteor, "userId").and.returnValue(userId);
   });
 
   afterEach(function() {
     jasmine.clock().uninstall();
-  })
+  });
 
   it("should publish a post", function() {
     spyOn(Posts, "insert");
-    jasmine.clock().mockDate(timeNow);
-    
     Posts.publish(message, userName);
     var insertedArgs = Posts.insert.calls.argsFor(0);
     var expectedArgs = [{
@@ -32,7 +31,6 @@ describe("Posts", function() {
   });
 
   it("should list all user's posts", function() {
-    jasmine.clock().mockDate(timeNow);
     var fakeResult = [
       {
         message: "hi", 
@@ -48,8 +46,8 @@ describe("Posts", function() {
       },
     ];
     spyOn(Posts, "find").and.returnValue(fakeResult);
-
-    var posts = Posts.list(userIds);
+    var result = Posts.list(userIds);
+    expect(result).toEqual(fakeResult);
     var findArgs = Posts.find.calls.argsFor(0);
     var expectedArgs = [
       {userId: {$in: userIds}},
