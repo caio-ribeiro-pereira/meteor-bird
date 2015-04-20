@@ -8,6 +8,7 @@ Posts.publish = function(message, name) {
   name: name
  };
  this.insert(params);
+ winston.info("Posts.publish: ", params);
 };
 Posts.list = function(userIds) {
  return this.find(

@@ -1,4 +1,4 @@
-Router.route('/', function() {
+Router.route("/", function() {
  var _id = Meteor.userId();
  this.subscribe("posts", _id).wait();
  this.subscribe("friendship", _id);
@@ -12,4 +12,7 @@ Router.route('/', function() {
    }
   }
  });
-}, { name: "home" });
+}, { 
+  name: "home", 
+  fastRender: true
+});

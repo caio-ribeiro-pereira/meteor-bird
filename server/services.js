@@ -1,9 +1,9 @@
 ServiceConfiguration.configurations.upsert(
-  { service: 'facebook' },
+  { service: Meteor.settings.FB_SERVICE },
   { 
     $set: {
-      appId: '739097852776258',
-      secret: '65f92b68e777844ce56e4473494296f4'
+      appId: Meteor.settings.FB_APPID,
+      secret: Meteor.settings.FB_SECRET
     }
   }
 );

@@ -15,3 +15,10 @@ iron:router
 sanjo:jasmine
 velocity:html-reporter
 velocity:core
+meteorhacks:npm
+
+
+npm-container
+appcache
+meteorhacks:fast-render
+arunoda:find-faster

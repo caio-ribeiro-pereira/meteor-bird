@@ -13,13 +13,13 @@ Meteor.methods({
      "profile.about": about
    }}
   );
-  // Posts.update(
-  //   {userId: this.userId},
-  //   {$set: {
-  //     name: name
-  //   }},
-  //   {multi: true}
-  // );
+  Posts.update(
+    {userId: this.userId},
+    {$set: {
+      name: name
+    }},
+    {multi: true}
+  );
  },
  publishPost: function(message, name) {
   Posts.publish(message, name);

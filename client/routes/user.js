@@ -16,4 +16,7 @@ Router.route("/user/:_id", function() {
    }
   }
  });
-}, { name: "user" });
+}, { 
+  name: "user",
+  fastRender: true
+});

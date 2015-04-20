@@ -7089,7 +7089,7 @@ var packageMetadata = {
                 },
                 "version": {
                   "type": "constant",
-                  "value": "b9aa71115b139a5012b08ea0c6798c46e6ae0902"
+                  "value": "0f5da6c02d08579a288d306cae1e4b78e77d9b09"
                 },
                 "PUBLIC_SETTINGS": {
                   "type": "undefined"
@@ -7213,7 +7213,7 @@ var packageMetadata = {
             },
             "connections": {
               "type": "constant",
-              "value": 1
+              "value": 0
             },
             "timeout": {
               "type": "constant",
@@ -7836,6 +7836,12 @@ var packageMetadata = {
                 },
                 "deny": {
                   "type": "function"
+                },
+                "findFaster": {
+                  "type": "function"
+                },
+                "findOneFaster": {
+                  "type": "function"
                 }
               }
             }
@@ -7856,11 +7862,11 @@ var packageMetadata = {
       "members": {
         "autoupdateVersion": {
           "type": "constant",
-          "value": "f9e0872f2f6631a94af8bb1836e2e16a0cfa073d"
+          "value": "d79772e5f39de9053cc7a55e9a4f4cf02c3089b0"
         },
         "autoupdateVersionRefreshable": {
           "type": "constant",
-          "value": "3279d733648fdf4dd85573966b2cad0a3270350f"
+          "value": "b7d1f3dc8ac10cb33c8158eab637ab6f1143b5aa"
         },
         "autoupdateVersionCordova": {
           "type": "constant",
@@ -7944,7 +7950,7 @@ var packageMetadata = {
             },
             "siteName": {
               "type": "constant",
-              "value": "localhost:3000"
+              "value": "localhost:5000"
             },
             "resetPassword": {
               "type": "object",
@@ -8038,6 +8044,12 @@ var packageMetadata = {
               "type": "function"
             },
             "deny": {
+              "type": "function"
+            },
+            "findFaster": {
+              "type": "function"
+            },
+            "findOneFaster": {
               "type": "function"
             }
           }
@@ -8169,6 +8181,12 @@ var packageMetadata = {
               "type": "function"
             },
             "deny": {
+              "type": "function"
+            },
+            "findFaster": {
+              "type": "function"
+            },
+            "findOneFaster": {
               "type": "function"
             }
           }
@@ -9522,6 +9540,7 @@ var packageMetadata = {
       }
     }
   },
+  "appcache": {},
   "iron:location": {},
   "reactive-dict": {
     "ReactiveDict": {
@@ -10303,6 +10322,12 @@ var packageMetadata = {
         },
         "deny": {
           "type": "function"
+        },
+        "findFaster": {
+          "type": "function"
+        },
+        "findOneFaster": {
+          "type": "function"
         }
       }
     },
@@ -10337,6 +10362,12 @@ var packageMetadata = {
           "type": "function"
         },
         "deny": {
+          "type": "function"
+        },
+        "findFaster": {
+          "type": "function"
+        },
+        "findOneFaster": {
           "type": "function"
         }
       }
@@ -10373,6 +10404,12 @@ var packageMetadata = {
         },
         "deny": {
           "type": "function"
+        },
+        "findFaster": {
+          "type": "function"
+        },
+        "findOneFaster": {
+          "type": "function"
         }
       }
     },
@@ -10407,6 +10444,12 @@ var packageMetadata = {
           "type": "function"
         },
         "deny": {
+          "type": "function"
+        },
+        "findFaster": {
+          "type": "function"
+        },
+        "findOneFaster": {
           "type": "function"
         }
       }
@@ -10443,6 +10486,12 @@ var packageMetadata = {
         },
         "deny": {
           "type": "function"
+        },
+        "findFaster": {
+          "type": "function"
+        },
+        "findOneFaster": {
+          "type": "function"
         }
       }
     },
@@ -10478,6 +10527,12 @@ var packageMetadata = {
         },
         "deny": {
           "type": "function"
+        },
+        "findFaster": {
+          "type": "function"
+        },
+        "findOneFaster": {
+          "type": "function"
         }
       }
     },
@@ -10512,6 +10567,12 @@ var packageMetadata = {
           "type": "function"
         },
         "deny": {
+          "type": "function"
+        },
+        "findFaster": {
+          "type": "function"
+        },
+        "findOneFaster": {
           "type": "function"
         }
       }
@@ -10562,11 +10623,11 @@ var packageMetadata = {
                 },
                 "pid": {
                   "type": "constant",
-                  "value": 36281
+                  "value": 42007
                 },
                 "fout": {
                   "type": "constant",
-                  "value": 29
+                  "value": 30
                 },
                 "child": {
                   "type": "object",
@@ -10585,7 +10646,7 @@ var packageMetadata = {
                     },
                     "pid": {
                       "type": "constant",
-                      "value": 36281
+                      "value": 42007
                     },
                     "stdin": {
                       "type": "null",
@@ -10707,7 +10768,41 @@ var packageMetadata = {
     }
   },
   "velocity:html-reporter": {},
-  "session": {},
+  "meteorhacks:npm": {},
+  "npm-container": {},
+  "meteorhacks:inject-data": {
+    "InjectData": {
+      "type": "object"
+    }
+  },
+  "meteorhacks:picker": {
+    "Picker": {
+      "type": "object",
+      "members": {
+        "filterFunction": {
+          "type": "undefined"
+        },
+        "routes": {
+          "type": "array"
+        },
+        "subRouters": {
+          "type": "array"
+        },
+        "middlewares": {
+          "type": "array"
+        },
+        "middleware": {
+          "type": "function"
+        },
+        "route": {
+          "type": "function"
+        },
+        "filter": {
+          "type": "function"
+        }
+      }
+    }
+  },
   "livedata": {
     "DDP": {
       "type": "object",
@@ -10775,6 +10870,39 @@ var packageMetadata = {
     },
     "LivedataTest": {
       "type": "undefined"
+    }
+  },
+  "meteorhacks:fast-render": {
+    "FastRender": {
+      "type": "object",
+      "members": {
+        "route": {
+          "type": "function"
+        },
+        "onAllRoutes": {
+          "type": "function"
+        }
+      }
+    }
+  },
+  "mongo-livedata": {},
+  "arunoda:find-faster": {
+    "FastRead": {
+      "type": "undefined"
+    }
+  },
+  "session": {},
+  "meteorhacks:async": {
+    "Async": {
+      "type": "object",
+      "members": {
+        "runSync": {
+          "type": "function"
+        },
+        "wrap": {
+          "type": "function"
+        }
+      }
     }
   }
 }

@@ -1,16 +1,20 @@
 Friendships = new Mongo.Collection('friendships');
 
 Friendships.follow = function(friendId) {
- this.insert({
+ var params = {
   userId: Meteor.userId(),
   friendId: friendId
- });
+ };
+ this.insert(params);
+ winston.info("Friendships.follow: ", params);
 };
 Friendships.unfollow = function(friendId) {
- this.remove({
+ var params = {
   userId: Meteor.userId(),
   friendId: friendId
- });
+ };
+ this.remove(params);
+ winston.info("Friendships.unfollow: ", params);
 };
 Friendships.isFollowing = function(friendId) {
  return this.findOne({

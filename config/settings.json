@@ -1,0 +1,7 @@
+{
+  "FB_APPID": "INCLUIR APPID",
+  "FB_SECRET": "INCLUIR SECRET",
+  "public": {
+    "FB_SERVICE": "facebook"
+  }
+}
