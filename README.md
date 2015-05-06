@@ -7,7 +7,7 @@ https://casadocodigo.refersion.com/l/d88.3525
 ## Instalando e rodando
 
 * Instale o Node.js (http://nodejs.org)
-* Instale o Meteor (http://meteor.com)
+* Instale o Meteor (https://www.meteor.com/install)
 * Acesse a pasta desse projeto via terminal: `cd meteor-bird`
 * Inicie o comando: `meteor`
 
