@@ -4,4 +4,4 @@ node_js:
 before_install:
  - "curl https://install.meteor.com | /bin/sh"
 script:
- - "/usr/local/bin/meteor --test"
+ - "meteor --test"
