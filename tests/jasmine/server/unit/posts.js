@@ -17,7 +17,7 @@ describe("Posts", function() {
     jasmine.clock().uninstall();
   });
 
-  it("should publish a post", function() {
+  xit("should publish a post", function() {
     spyOn(Posts, "insert");
     Posts.publish(message, userName);
     var insertedArgs = Posts.insert.calls.argsFor(0);
@@ -30,7 +30,7 @@ describe("Posts", function() {
     expect(insertedArgs).toEqual(expectedArgs);
   });
 
-  it("should list all user's posts", function() {
+  xit("should list all user's posts", function() {
     var fakeResult = [
       {
         message: "hi", 

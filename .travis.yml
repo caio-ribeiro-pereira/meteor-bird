@@ -4,5 +4,6 @@ node_js:
  - "0.12"
 install:
  - "curl https://install.meteor.com | /bin/sh"
+ - "meteor update"
 script:
- - "meteor --test"
+ - "meteor --test --once --settings=config/settings.json"

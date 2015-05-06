@@ -7089,10 +7089,16 @@ var packageMetadata = {
                 },
                 "version": {
                   "type": "constant",
-                  "value": "0f5da6c02d08579a288d306cae1e4b78e77d9b09"
+                  "value": "4e28473a0523034af2c7001d649227dcf5525d3a"
                 },
                 "PUBLIC_SETTINGS": {
-                  "type": "undefined"
+                  "type": "object",
+                  "members": {
+                    "FB_SERVICE": {
+                      "type": "constant",
+                      "value": "facebook"
+                    }
+                  }
                 }
               }
             }
@@ -7109,46 +7115,46 @@ var packageMetadata = {
           "members": {
             "use": {
               "type": "function",
-              "refID": 9
+              "refID": 10
             },
             "handle": {
               "type": "function",
-              "refID": 11
+              "refID": 12
             },
             "listen": {
               "type": "function",
-              "refID": 13
+              "refID": 14
             },
             "setMaxListeners": {
               "type": "function",
-              "refID": 15
+              "refID": 16
             },
             "emit": {
               "type": "function",
-              "refID": 17
+              "refID": 18
             },
             "addListener": {
               "type": "function",
-              "refID": 19
+              "refID": 20
             },
             "on": {
-              "ref": 19
+              "ref": 20
             },
             "once": {
               "type": "function",
-              "refID": 21
+              "refID": 22
             },
             "removeListener": {
               "type": "function",
-              "refID": 23
+              "refID": 24
             },
             "removeAllListeners": {
               "type": "function",
-              "refID": 25
+              "refID": 26
             },
             "listeners": {
               "type": "function",
-              "refID": 27
+              "refID": 28
             },
             "route": {
               "type": "constant",
@@ -7163,37 +7169,37 @@ var packageMetadata = {
           "type": "function",
           "members": {
             "use": {
-              "ref": 9
+              "ref": 10
             },
             "handle": {
-              "ref": 11
+              "ref": 12
             },
             "listen": {
-              "ref": 13
+              "ref": 14
             },
             "setMaxListeners": {
-              "ref": 15
+              "ref": 16
             },
             "emit": {
-              "ref": 17
+              "ref": 18
             },
             "addListener": {
-              "ref": 19
+              "ref": 20
             },
             "on": {
-              "ref": 19
+              "ref": 20
             },
             "once": {
-              "ref": 21
+              "ref": 22
             },
             "removeListener": {
-              "ref": 23
+              "ref": 24
             },
             "removeAllListeners": {
-              "ref": 25
+              "ref": 26
             },
             "listeners": {
-              "ref": 27
+              "ref": 28
             },
             "route": {
               "type": "constant",
@@ -7213,7 +7219,7 @@ var packageMetadata = {
             },
             "connections": {
               "type": "constant",
-              "value": 0
+              "value": 1
             },
             "timeout": {
               "type": "constant",
@@ -7244,28 +7250,28 @@ var packageMetadata = {
               "type": "function"
             },
             "setMaxListeners": {
-              "ref": 15
+              "ref": 16
             },
             "emit": {
-              "ref": 17
+              "ref": 18
             },
             "addListener": {
-              "ref": 19
+              "ref": 20
             },
             "on": {
-              "ref": 19
+              "ref": 20
             },
             "once": {
-              "ref": 21
+              "ref": 22
             },
             "removeListener": {
-              "ref": 23
+              "ref": 24
             },
             "removeAllListeners": {
-              "ref": 25
+              "ref": 26
             },
             "listeners": {
-              "ref": 27
+              "ref": 28
             }
           }
         },
@@ -7862,11 +7868,11 @@ var packageMetadata = {
       "members": {
         "autoupdateVersion": {
           "type": "constant",
-          "value": "d79772e5f39de9053cc7a55e9a4f4cf02c3089b0"
+          "value": "d17fcb845c5d96600963c3631349b3760425adc9"
         },
         "autoupdateVersionRefreshable": {
           "type": "constant",
-          "value": "b7d1f3dc8ac10cb33c8158eab637ab6f1143b5aa"
+          "value": "24e6abc2763bffb97273e366639f514d9e33d16e"
         },
         "autoupdateVersionCordova": {
           "type": "constant",
@@ -7950,7 +7956,7 @@ var packageMetadata = {
             },
             "siteName": {
               "type": "constant",
-              "value": "localhost:5000"
+              "value": "localhost:3000"
             },
             "resetPassword": {
               "type": "object",
@@ -10608,127 +10614,7 @@ var packageMetadata = {
       "type": "object",
       "members": {
         "karmaChilds": {
-          "type": "object",
-          "members": {
-            "jasmine-client-unit": {
-              "type": "object",
-              "members": {
-                "taskName": {
-                  "type": "constant",
-                  "value": "jasmine-client-unit"
-                },
-                "appPath": {
-                  "type": "constant",
-                  "value": "/Users/caio/Documents/workspace/meteor/meteor-bird"
-                },
-                "pid": {
-                  "type": "constant",
-                  "value": 42007
-                },
-                "fout": {
-                  "type": "constant",
-                  "value": 30
-                },
-                "child": {
-                  "type": "object",
-                  "members": {
-                    "domain": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "signalCode": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "exitCode": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "pid": {
-                      "type": "constant",
-                      "value": 42007
-                    },
-                    "stdin": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "stdout": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "stderr": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "stdio": {
-                      "type": "array"
-                    },
-                    "spawn": {
-                      "type": "function"
-                    },
-                    "kill": {
-                      "type": "function"
-                    },
-                    "ref": {
-                      "type": "function"
-                    },
-                    "unref": {
-                      "type": "function"
-                    },
-                    "setMaxListeners": {
-                      "type": "function"
-                    },
-                    "emit": {
-                      "type": "function"
-                    },
-                    "addListener": {
-                      "type": "function",
-                      "refID": 17
-                    },
-                    "on": {
-                      "ref": 17
-                    },
-                    "once": {
-                      "type": "function"
-                    },
-                    "removeListener": {
-                      "type": "function"
-                    },
-                    "removeAllListeners": {
-                      "type": "function"
-                    },
-                    "listeners": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "getTaskName": {
-                  "type": "function"
-                },
-                "getChild": {
-                  "type": "function"
-                },
-                "getPid": {
-                  "type": "function"
-                },
-                "isDead": {
-                  "type": "function"
-                },
-                "isRunning": {
-                  "type": "function"
-                },
-                "readPid": {
-                  "type": "function"
-                },
-                "spawn": {
-                  "type": "function"
-                },
-                "kill": {
-                  "type": "function"
-                }
-              }
-            }
-          }
+          "type": "object"
         },
         "getKarmaChild": {
           "type": "function"
